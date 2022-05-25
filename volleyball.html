@@ -1,0 +1,379 @@
+<html lang="en">
+  <head>
+    
+<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/2b147a7354.js" crossorigin="anonymous"></script>
+   
+    <title>dropdown Menu</title>
+    <style>
+      .matt h1,.game h1,.game2 h1,.game3 h1,.game4 h1{
+color:brown;
+
+}
+.ahmed{
+  color:red;
+}
+      .k{
+        text-align: center;
+      }
+      .contact ul{
+        margin-left: 660px;
+      }
+      .contact ul li{
+        margin:20px;
+      }
+      .contact h2{
+        margin-left: 610px;
+      }
+      body{
+        background-color: #eee;
+      }
+    ul li a  i{
+        color:black;
+      }
+ 
+ :root {
+  --color-primary: #0073ff;
+  --color-white: #e9e9e9;
+  --color-black: #141d28;
+  --color-black-1: #212b38;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+ 
+}
+
+.logo {
+  color: var(--color-white);
+  font-size: 30px;
+}
+
+.logo span {
+  color: var(--color-primary);
+}
+
+.menu-bar {
+  background-color: var(--color-black);
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+
+  position: relative;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-bar ul li {
+  /* width: 120px; */
+  padding: 10px 30px;
+  /* text-align: center; */
+
+  position: relative;
+}
+
+.menu-bar ul li a {
+  font-size: 20px;
+  color: var(--color-white);
+  text-decoration: none;
+
+  transition: all 0.3s;
+}
+
+.menu-bar ul li a:hover {
+  color: var(--color-primary);
+}
+
+.fas {
+  float: right;
+  margin-left: 10px;
+  padding-top: 3px;
+}
+
+/* dropdown menu style */
+.dropdown-menu {
+  display: none;
+}
+
+.menu-bar ul li:hover .dropdown-menu {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 100%;
+  background-color: var(--color-black);
+}
+
+.menu-bar ul li:hover .dropdown-menu ul {
+  display: block;
+  margin: 10px;
+}
+
+.menu-bar ul li:hover .dropdown-menu ul li {
+  width: 150px;
+  padding: 10px;
+}
+
+.dropdown-menu-1 {
+  display: none;
+}
+
+.dropdown-menu ul li:hover .dropdown-menu-1 {
+  display: block;
+  position: absolute;
+  left: 150px;
+  top: 0;
+  background-color: var(--color-black);
+}
+
+.hero {
+  height: calc(100vh - 80px);
+  background-image: url(./bg.jpg);
+  background-position: center;
+}
+.menu-bar{
+  background-color: #ff7200;
+}
+
+ .contact{
+  width:100%;
+  height: 200px;
+background-color:rgba(0, 0, 0, .1);
+
+ }
+ 
+ .matt img,.game img,.game2 img,.game3 img,.game4 img{
+   float:right;
+   width:270px;
+   height:270px;
+  
+   margin-right: 30px;
+ }
+.matt,.game,.game2 ,.game3,.game4{
+  width:100%;
+  height:400px;
+
+}
+.game p,.matt p,.game2 p,.game3 p,.game4 p {
+  margin-left:20px;
+  padding:10px;
+  color:#212b38
+}
+/*aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa*/
+
+@media (max-width:768px){
+  .k{
+    margin-left:50px;
+  }
+
+  .matt img,.game img,.game2 img,.game3 img,.game4 img{
+   width:220px;
+   height:220px;
+   margin-right:70px;
+   
+   float: right;
+ }
+.matt,.game,.game2 ,.game3,.game4{
+  width:100%;
+  height:600px;
+  margin-left: 0px;
+
+margin-bottom: 20px;
+
+}
+
+
+.game p,.matt p,.game2 p,.game3 p,.game4 p {
+
+  padding:8px;
+  font-size: 16px;
+  margin-top: 20px;
+  font-weight: bold;
+
+
+}
+
+
+.game h1,.matt h1,.game2 h1,.game3 h1,.game4 h1 {
+
+  display: none;
+}
+  .menu-bar{
+    width: 500px;
+  }
+
+  .k{
+
+    width:400px;
+    margin-left: 0px;
+    padding-right: 20px;
+
+
+  }
+  .game4{
+
+    margin-top: -35px;
+  }
+  #hh{
+    display: none;
+  }
+  .pages{
+    display: none;
+  }
+  .c{
+
+display: none;
+
+  }
+  .contact ul{
+        margin-left: 10px;
+      }
+   
+      .contact h2{
+        margin-left: 10px;
+      }
+      .ahmed{
+        color:red;
+      }
+      .contact{
+        height: 300px;
+      }
+}
+
+@media (min-width:656px) and (max-width:1500px){
+
+.contact h2,.contact ul{
+
+
+
+  margin-left:40px;
+}
+.ahmed{
+  color:red;
+}
+
+}
+
+    </style>
+  </head>
+  <body>
+    <div class="menu-bar">
+      <h1 class="logo">sport<span></span></h1>
+      <ul>
+        
+        <li><a href="#" class="pages">Pages <i class="fas fa-caret-down"></i></a>
+
+            <div class="dropdown-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="register.html">register</a></li>
+                  <li>
+                    <a href="#"> sports <i class="fas fa-caret-right"></i></a>
+                    
+                    <div class="dropdown-menu-1">
+                      <ul>
+                        <li><a href="football.html"> football</a> </li>
+                        <li><a href="tennis.html">tennis</a></li>
+                        <li><a href="volleyball.html">volleyball</a></li>
+                      
+                       
+                      </ul>
+                    </div>
+                  </li>
+                
+                </ul>
+              </div>
+        </li>
+        
+        <li><a href="#con" class="c">Contact</a></li>
+      </ul>
+    </div>
+   <h1  class="k">famous players in volleyball</h1> <br><br>
+   <div class="game4">
+    <img src="images/e029c53fa936f1ee63403289d7838cbd.jpg">
+  <h1 style="margin-left:20px;">1-Osmany Juantorena</h1>
+  <p style="font-size:20px;"><p style="font-size:20px;"> Juantorena Portuondo (born 12 August 1985) is a Cuban-born Italian volleyball player,[1] a memberof Cuba national </p>
+  <p style="font-size:20px;">  volleyball  team in 2003–2006 and current member of Italy national volleyball team and Italian club Cucine Lube  Civitanova.[2] </p>
+  <p style="font-size:20px;"> Juantorena was bronze medalist of the 2005 World League and silver medalist 2016 Summer Olympics. He is a multiple winner  </p>
+
+  
+  </div>
+
+<div class="game">
+  <img src="images/unnamed-file-16385.jpg">
+<h1 style="margin-left:20px;">2-IIvan Zaytsev</h1>
+<p style="font-size:20px;"><p style="font-size:20px;"> Vyacheslavovich Zaytsev(born 2 October 1988), nicknamed lo Zar ("the Tsar"),and he is  is an Italian volleyballplayer of Russian </p>
+<p style="font-size:20px;">  origin,the captain of Italy men's national volleyball team,a bronze medalist of the Olympic Games London 2012,ilver medalist of</p>
+<p style="font-size:20px;">    the European Championship (2011, 2013), bronze medalist of the World League (2013, 2014),Italian Champion (2014) and silver </p>
+
+</div>
+<div class="game2">
+  <img src="images/torey-defalco.jpg">
+<h1 style="margin-left:20px;">3-Torey DeFalco</h1>
+<p style="font-size:20px;"><p style="font-size:20px;">DeFalco (born April 10, 1997) is an American volleyball player. He is part of the United States men's national volleyball   </p>
+<p style="font-size:20px;"> , participant at the Olympic Games (Tokyo 2020). At the professional club level, he plays for Indykpol AZS Olsztyn. a bronze medalist</p>
+<p style="font-size:20px;">  teamof the Olympic Games London 2012, silver medalist of the European Championship (2011, 2013),bronze medalist of the World  </p>
+
+
+</div>
+<div class="game3" id="tt">
+  <img src="images/unnamed-file-18781.jpg">
+<h1 style="margin-left:20px;">4-Micah Christenson</h1>
+<p style="font-size:20px;"><p style="font-size:20px;"> Makanamaikalani Christenson (born May 8, 1993) is an American volleyball player, member  of the United States men's national </p>
+<p style="font-size:20px;">  volleyball team and Russian club Zenit Kazan. He is a Bronze medalist of the Olympic Games Rio 2016, gold medalist of the 2014</p>
+<p style="font-size:20px;">    World  League and 2015 World Cup, 2013 NORCECA Champion.</p>
+<p style="font-size:20px;"> </p>
+
+</div>
+
+
+<div class="matt" style="width:100%; height:400px;" id="hh">
+  <img src="images/unnamed-file-18100.jpg" style="margin-left: 40px;" >
+<h1 style="margin-left:20px;"> 5-matt andrason</h1>
+<p style="font-size:20px;"> Matthew John Anderson (born April 18, 1987) is an American volleyball player. He is a member of the US national team, </p>
+<p style="font-size:20px;"> participating in three Olympic Games, as well as the 2014 World League and 2015 World Cup.teamof the Olympic Games London </p>
+<p style="font-size:20px;" id="o">  2012, silver medalist of the European Championship (2011, 2013),bronze medalist of the World League (2013, 2014), Italian </p>
+<p style="font-size:20px;" id="l"> Champion (2014) and silver medalist of the Olympic Games Rio 2016.</p>
+</div>
+
+<div class="contact"  id="con">
+  
+  <h2 class="ahmed">you can find us at :</h2> <br>
+  <h2  >abdullahalaa@gmail.com</h2><br><br>
+  
+  <ul >
+    <li  ><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+    <li ><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+  
+  
+    
+    <li><a href="#"><i class="fa-brands fa-instagram-square"></i></a></li>
+  </ul>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  </body>

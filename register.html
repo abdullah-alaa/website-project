@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2b147a7354.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+  width: 100%;
+    background: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(r.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+
+.container form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background:#eee;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+ position: relative;
+    margin-left: 500px;
+    top:150px;
+    border-radius: 100px;
+
+    
+}
+.fa-paper-plane{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    font-size: 26px;
+    padding: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label{
+    flex-basis: 28%;
+    color:blueviolet;
+    font-size: 18px;
+}
+.input-group input, .input-group textarea{
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder{
+    font-size: 14px
+}
+
+form button{
+    background:orange;
+    color: #fff;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+    border-radius: 50px;
+}
+span  {
+  color:red;
+}
+@media (max-width:1535px){
+
+  .container form{
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px 20px;
+    background:#eee;
+    border-radius: 4px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+ position: relative;
+    margin-left: 10px;
+    top:80px;
+    border-radius: 100px;
+
+    
+}
+
+
+}
+@media (max-width:768px){
+
+.container form{
+  width: 90%;
+  width: 359px;
+  padding: 50px 30px 20px;
+  background:#eee;
+  border-radius: 4px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+position: relative;
+  margin-left: 1px;
+  top:80px;
+border-radius: none;
+
+  
+}
+
+
+}
+
+    </style>
+</head>
+<body>
+
+  
+  <div class="container">
+    <form action="action.html" onsubmit="validate()" class="ff">
+ <center><div style="color:coral; font-size:28px;; font-size:larger; text-align: center;">RESGISTER</div></center>
+
+      <div class="input-group">
+        <label>first Name</label>
+        <input type="text"  id="fn" onkeyup="abdo()">
+        <span id="fname-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>last name</label>
+        <input type="text" id="ln" onkeyup="ali()">
+        <span id="lname-error"></span>
+      </div>
+
+      <div class="input-group">
+        <label>Email</label>
+        <input type="email"  id="em" onkeyup="sayed()">
+        <span id="email-error"></span>
+      </div>   
+      
+      <div class="input-group">
+        <label>address</label>
+        <input type="text"  id="add" onkeyup="aa()">
+        <span id="adh"></span>
+    
+      </div>
+      <div class="input-group">
+        <label>phone number</label>
+        <input type="tel"  id="pn" onkeyup="alaa()">
+        <span id="phone-error"></span></div>
+
+      <div class="input-group">
+        <label>password</label>
+        <input type="password"  id="pw" onkeyup="omar()" >
+        <span id="pass-error"></span></div><br>
+     <center>   <select  name="gender" id="gend">
+          <option value="male">male</option>
+          <option valur="female">female</option>
+        </select></center> 
+    <button onclick="return validate();">Submit</button>
+    <span id="submit-error" style="margin-left:20px" ></span>
+  
+   
+  </form>
+  <script src="register.js"></script>
+
+</div>
+  </div>
+
+</body>
+</html>
